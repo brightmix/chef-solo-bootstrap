@@ -17,3 +17,7 @@ When you run the 'rake cook' task it will:
 * Run the 'test' recipe which creates the dir '/tmp/foobarbaz' on the remote machine.
 * Sprinkles magic dust on your server...
 
+= CREDITS:
+
+Most of the ideas and code here was cribbed from http://probablyinteractive.com/2009/3/29/Amazon%20EC2%20+%20Chef%20=%20Mmmmm.html.  Just updated to match my understanding of the most recent config.  My thanks to the author for giving me an excellent headstart.
+
