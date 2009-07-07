@@ -1,0 +1,19 @@
+= DESCRIPTION:
+
+Uses the Chef configuration management tool, specifically chef-solo to configure a remote server.  This is the simplest way to get started with using Chef.
+
+= REQUIREMENTS:
+
+* Make sure Chef is installed on the remote server you want to configure.  See chef_bootstrap.rb to help.
+* Modify config/chef.json to specify the recipes from the 'cookbooks' dir you want to run
+* Run with 'rake cook server=username@host.domain.com'
+
+= HOW IT WORKS:
+
+When you run the 'rake cook' task it will:
+
+* rsync this entire directory to the location specified in 'REMOTE_CHEF_PATH' in the Rakefile
+* Run chef-solo on the remote machine using the config files in config/ and your cookbooks.
+* Run the 'test' recipe which creates the dir '/tmp/foobarbaz' on the remote machine.
+* Sprinkles magic dust on your server...
+
