@@ -1,2 +1,7 @@
-{ "recipes": "test::default", "run_list": "role[base]" }
+{ "gems":[
+    { "name":"rake", "version":"0.8.7" },
+    { "name":"rack", "version": "1.0.0" },
+    { "name":"geminstaller", "version":"0.5.3" },
+    { "name":"pony", "version":"0.3" }
+  ],"recipes": ["test::default", "gems"] }
 
