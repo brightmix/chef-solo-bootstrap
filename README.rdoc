@@ -13,6 +13,8 @@ Uses the Chef configuration management tool, specifically chef-solo to configure
 * git submodule update
 
 * sh chef_bootstrap.sh
+* set a fully qualified domain name in /etc/hosts (e.g. foo.brightmix.com)
+
 * chef-solo -l debug -c config/solo.rb -j config/chef.json
 
 

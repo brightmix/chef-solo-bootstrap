@@ -1,0 +1,9 @@
+{
+  "name": "base",
+  "default_attributes": { },
+  "override_attributes": { },
+  "json_class": "Chef::Role",
+  "description": "The base role for all things.",
+  "chef_type": "role",
+  "recipes": ["sudo","apache2","gems"]
+}

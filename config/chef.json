@@ -1,2 +1,2 @@
-{ "recipes": "test::default" }
+{ "recipes": "test::default", "run_list": "role[base]" }
 
