@@ -2,6 +2,20 @@
 
 Uses the Chef configuration management tool, specifically chef-solo to configure a remote server.  This is the simplest way to get started with using Chef.
 
+= GETTING STARTED:
+
+* apt-get install -y git-core
+* cd /tmp 
+
+* git clone git://github.com/brightmix/chef-solo-bootstrap.git
+* cd /tmp/chef-solo-bootstrap
+* git submodule init
+* git submodule update
+
+* sh chef_bootstrap.sh
+* chef-solo -l debug -c config/solo.rb -j config/chef.json
+
+
 = REQUIREMENTS:
 
 * Make sure Chef is installed on the remote server you want to configure.  See chef_bootstrap.rb to help.
