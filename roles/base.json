@@ -1,6 +1,8 @@
 {
   "name": "base",
-  "default_attributes": { },
+  "default_attributes": { 
+	authorization\/sudoers\/users
+	},
   "override_attributes": { },
   "json_class": "Chef::Role",
   "description": "The base role for all things.",
